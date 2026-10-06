@@ -250,7 +250,10 @@ export default function ChannelManagerLandingPage() {
           </p>
 
           <button className="primaryButton formSubmit" type="submit">
-            Get started <ArrowRight />
+            <svg className="submitBorder" aria-hidden="true" focusable="false">
+              <rect pathLength="100" />
+            </svg>
+            <span>Get started <ArrowRight /></span>
           </button>
           {submitted && (
             <p className="formSuccess" role="status">
@@ -557,5 +560,3 @@ function ChannelNetwork() {
     </div>
   );
 }
-
-
